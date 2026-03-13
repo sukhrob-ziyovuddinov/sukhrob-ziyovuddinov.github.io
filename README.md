@@ -1,1 +1,0 @@
-# sukhrob-ziyovuddinov.github.io
