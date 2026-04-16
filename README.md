@@ -25,17 +25,6 @@ ASII is an AI-Native intelligence infrastructure engineered to redefine financia
 4.  **Strategic Intelligence Agent:** Automated SAR (Suspicious Activity Report) generation.
 
 ---
-
-### 🌐 Connect
-<p align="left">
-  <a href="https://linkedin.com/in/sukhrob-ziyovuddinov" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:ceo@asii.ai">
-    <img src="https://img.shields.io/badge/Email-Executive_Inquiry-D4AF37?style=for-the-badge&logo=gmail&logoColor=black" />
-  </a>
-</p>
----
 ---
 ### 📬 Let's Connect
 For investment inquiries, partnerships, or technical discussions, feel free to reach out:
