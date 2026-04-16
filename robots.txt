@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sukhrob-ziyovuddinov.github.io/sitemap.xml
