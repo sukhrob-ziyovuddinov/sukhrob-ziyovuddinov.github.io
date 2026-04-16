@@ -6,156 +6,78 @@
     <title>ASII | AI-Native Financial Crime Intelligence Infrastructure</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root {
-            --primary-dark: #050505;
-            --accent-blue: #007AFF; 
-            --accent-gold: #D4AF37; 
-            --glass-bg: rgba(255, 255, 255, 0.03);
-            --text-main: #E0E0E0;
-        }
-
+        :root { --primary: #050505; --gold: #D4AF37; --text: #E0E0E0; --glass: rgba(255, 255, 255, 0.03); }
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .bg-glow {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at 50% 50%, #101827 0%, #050505 100%);
-            z-index: -1;
-        }
-
-        header {
-            padding: 1.5rem 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(5, 5, 5, 0.8);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0; z-index: 1000;
-        }
-
+        body { font-family: 'Segoe UI', sans-serif; background: var(--primary); color: var(--text); line-height: 1.6; }
+        .bg-glow { position: fixed; top: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, #101827 0%, #050505 100%); z-index: -1; }
+        header { padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; }
         .logo { font-size: 1.8rem; font-weight: 800; color: white; letter-spacing: 2px; }
-        .logo span { color: var(--accent-gold); }
-
-        nav a { color: var(--text-main); text-decoration: none; margin-left: 2rem; font-size: 0.8rem; text-transform: uppercase; transition: 0.3s; }
-        nav a:hover { color: var(--accent-gold); }
-
+        .logo span { color: var(--gold); }
+        nav a { color: var(--text); text-decoration: none; margin-left: 2rem; font-size: 0.8rem; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: var(--gold); }
         .hero { padding: 8rem 10% 4rem; text-align: center; }
-        .hero h1 {
-            font-size: 3.2rem;
-            background: linear-gradient(to right, #fff, #888);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-        }
-        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem; color: #aaa; }
-
-        .cta-group { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-        .btn { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; }
-        .btn-primary { background: var(--accent-gold); color: black; }
-        .btn-outline { border: 1px solid #444; color: white; }
-        .btn:hover { transform: translateY(-3px); }
-
-        .section { padding: 4rem 10%; }
+        .hero h1 { font-size: 3.5rem; background: linear-gradient(to right, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; }
+        .btn { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; margin: 0.5rem; }
+        .btn-primary { background: var(--gold); color: black; }
+        .section { padding: 5rem 10%; }
         .section-title { font-size: 2.2rem; margin-bottom: 3rem; text-align: center; }
-        .section-title span { color: var(--accent-gold); }
-
+        .section-title span { color: var(--gold); }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .card { background: var(--glass-bg); border: 1px solid #222; padding: 2.5rem; border-radius: 15px; }
-        .card i { font-size: 2rem; color: var(--accent-gold); margin-bottom: 1rem; }
-
-        /* NEW: Founder Section */
-        .founder-box {
-            background: rgba(212, 175, 55, 0.05);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            padding: 3rem;
-            border-radius: 20px;
-            margin: 2rem 0;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            text-align: left;
-        }
-        .founder-text h2 { color: var(--accent-gold); margin-bottom: 1rem; }
-        .founder-text p { font-style: italic; color: #ddd; }
-
-        .investor-section {
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover; border-radius: 20px; padding: 4rem 2rem; text-align: center; margin-bottom: 4rem;
-        }
-
+        .card { background: var(--glass); border: 1px solid #222; padding: 2rem; border-radius: 15px; transition: 0.3s; }
+        .card:hover { border-color: var(--gold); }
+        .card i { font-size: 2rem; color: var(--gold); margin-bottom: 1rem; }
+        .founder-box { background: rgba(212, 175, 55, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); padding: 3rem; border-radius: 20px; text-align: left; }
         footer { padding: 3rem 10%; border-top: 1px solid #222; text-align: center; color: #666; font-size: 0.8rem; }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .founder-box { flex-direction: column; text-align: center; }
-        }
     </style>
 </head>
 <body>
-
 <div class="bg-glow"></div>
-
 <header>
     <div class="logo">ASII<span>.</span></div>
     <nav>
-        <a href="#about">Infrastructure</a>
+        <a href="#about">Tech</a>
+        <a href="#roadmap">Roadmap</a>
         <a href="#founder">Founder</a>
-        <a href="#investors">Investors</a>
-        <a href="https://linkedin.com/in/sukhrob-ziyovuddinov">LinkedIn</a>
+        <a href="mailto:ceo@asii.ai">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <h1>AI-Native Financial Crime<br>Intelligence Infrastructure</h1>
-    <p>ASII is the next-generation architecture engineered for the MENA region. We reduce compliance noise by 95% and bridge the gap between Fiat and Digital Assets for the 2026 FATF mandate.</p>
+    <h1>AI-Native Financial Intelligence</h1>
+    <p>Bridging the gap between Fiat & Crypto compliance. Engineered for the 2027 UAE Digital Mandate.</p>
     <div class="cta-group">
         <a href="https://linkedin.com/in/sukhrob-ziyovuddinov" class="btn btn-primary">Connect with Founder</a>
-        <a href="mailto:ceo@asii.ai" class="btn btn-outline">Request Pitch Deck</a>
     </div>
 </section>
 
 <section class="section" id="about">
-    <h2 class="section-title">Core <span>Infrastructure</span></h2>
+    <h2 class="section-title">AI Agent <span>Architecture</span></h2>
     <div class="grid">
-        <div class="card"><i class="fas fa-brain"></i><h3>AI-Native Engine</h3><p>Built for real-time detection of complex crime patterns with 95% noise reduction.</p></div>
-        <div class="card"><i class="fas fa-shield-alt"></i><h3>AML & Fraud Defense</h3><p>Automating Anti-Money Laundering processes through autonomous AI Agent Swarms.</p></div>
-        <div class="card"><i class="fas fa-network-wired"></i><h3>2027 Digital Mandate</h3><p>Optimized for UAE Federal Decree Law No. 10/2025 and VARA compliance.</p></div>
+        <div class="card"><i class="fas fa-search-location"></i><h3>Regulatory Locator</h3><p>Real-time monitoring of UAE Federal Laws and VARA compliance.</p></div>
+        <div class="card"><i class="fas fa-shield-alt"></i><h3>Integrity Controller</h3><p>Predictive analysis of cross-border Fiat & Crypto transaction patterns.</p></div>
+        <div class="card"><i class="fas fa-user-secret"></i><h3>Behavioral Profiling</h3><p>Advanced entity resolution and UBO identification using AI Swarms.</p></div>
+    </div>
+</section>
+
+<section class="section" id="roadmap">
+    <h2 class="section-title">Strategic <span>Roadmap</span></h2>
+    <div class="grid">
+        <div class="card"><h4>Phase 1: 90-Day Sprint</h4><p>Accelerator onboarding (Hub71/DIFC) & Tier-1 VASP identification.</p></div>
+        <div class="card"><h4>Phase 2: Market Entry</h4><p>Brand launch & 14-day "Shadow Pilots" with institutional partners.</p></div>
+        <div class="card"><h4>Phase 3: Scaling</h4><p>Seed round opening and full FATF 2026 Gold Standard automation.</p></div>
     </div>
 </section>
 
 <section class="section" id="founder">
     <div class="founder-box">
-        <div class="founder-text">
-            <h2>About the Founder</h2>
-            <p>"With a career rooted in deep-tier investigations at the <b>Anti-Illicit Drug Trafficking Department (MVD/UBNON)</b> and over a decade of business operations in Dubai since 2012, I am building ASII to automate the fight against financial crime using the power of AI."</p>
-            <br>
-            <p><b>Sukhrob Ziyovuddinov</b><br>Founder & CEO, ASII</p>
-        </div>
+        <h2 style="color:var(--gold)">Message from the Founder</h2>
+        <p style="font-style:italic; margin: 1.5rem 0;">"Leveraging my background in high-stakes investigations (MVD/UBNON) and 12+ years in Dubai's business ecosystem, I am building ASII to automate financial trust for the next decade."</p>
+        <p><strong>Sukhrob Ziyovuddinov</strong><br>Founder & CEO, ASII</p>
     </div>
 </section>
 
-<section class="investor-section" id="investors">
-    <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">Strategic Partnership</h2>
-    <p style="margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-        ASII is scaling to meet the 2026 FATF Gold Standard for the UAE. We invite institutional partners to join the future of RegTech.
-    </p>
-    <a href="mailto:ceo@asii.ai" class="btn btn-primary">Get Executive Summary</a>
-</section>
-
 <footer>
-    <p>&copy; 2026 ASII. Built for the future of Financial Intelligence.</p>
-    <p>Dubai, United Arab Emirates | MENA Region</p>
+    <p>&copy; 2026 ASII. Dubai, United Arab Emirates. Built for Financial Integrity.</p>
 </footer>
-
 </body>
 </html>
