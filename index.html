@@ -1,108 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASII | AI-Native Financial Crime Intelligence Infrastructure</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root { --primary: #050505; --gold: #D4AF37; --text: #E0E0E0; --glass: rgba(255, 255, 255, 0.03); }
-        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--primary); color: var(--text); line-height: 1.6; }
-        .bg-glow { position: fixed; top: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, #101827 0%, #050505 100%); z-index: -1; }
-        header { padding: 1.5rem 10%; display: flex; justify-content: space-between; align-items: center; background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 1000; }
-        .logo { font-size: 1.8rem; font-weight: 800; color: white; letter-spacing: 2px; }
-        .logo span { color: var(--gold); }
-        nav a { color: var(--text); text-decoration: none; margin-left: 2rem; font-size: 0.8rem; text-transform: uppercase; transition: 0.3s; }
-        nav a:hover { color: var(--gold); }
-        .hero { padding: 8rem 10% 4rem; text-align: center; }
-        .hero h1 { font-size: 3.5rem; background: linear-gradient(to right, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; }
-        .btn { padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; margin: 0.5rem; }
-        .btn-primary { background: var(--gold); color: black; }
-        .section { padding: 5rem 10%; }
-        .section-title { font-size: 2.2rem; margin-bottom: 3rem; text-align: center; }
-        .section-title span { color: var(--gold); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .card { background: var(--glass); border: 1px solid #222; padding: 2rem; border-radius: 15px; transition: 0.3s; }
-        .card:hover { border-color: var(--gold); }
-        .card i { font-size: 2rem; color: var(--gold); margin-bottom: 1rem; }
-        .founder-box { background: rgba(212, 175, 55, 0.05); border: 1px solid rgba(212, 175, 55, 0.2); padding: 3rem; border-radius: 20px; text-align: left; }
-        footer { padding: 3rem 10%; border-top: 1px solid #222; text-align: center; color: #666; font-size: 0.8rem; }
-    </style>
-</head>
-<body>
-<div class="bg-glow"></div>
-<header>
-    <div class="logo">ASII<span>.</span></div>
-    <nav>
-        <a href="#about">Tech</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#founder">Founder</a>
-        <a href="mailto:ceo@asii.ai">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>AI-Native Financial Intelligence</h1>
-    <p>Bridging the gap between Fiat & Crypto compliance. Engineered for the 2027 UAE Digital Mandate.</p>
-    <div class="cta-group">
-        <a href="https://linkedin.com/in/sukhrob-ziyovuddinov" class="btn btn-primary">Connect with Founder</a>
-    </div>
-</section>
-
-<section class="section" id="about">
-    <h2 class="section-title">AI Agent <span>Architecture</span></h2>
-    <div class="grid">
-        <div class="card"><i class="fas fa-search-location"></i><h3>Regulatory Locator</h3><p>Real-time monitoring of UAE Federal Laws and VARA compliance.</p></div>
-        <div class="card"><i class="fas fa-shield-alt"></i><h3>Integrity Controller</h3><p>Predictive analysis of cross-border Fiat & Crypto transaction patterns.</p></div>
-        <div class="card"><i class="fas fa-user-secret"></i><h3>Behavioral Profiling</h3><p>Advanced entity resolution and UBO identification using AI Swarms.</p></div>
-    </div>
-</section>
-
-<section class="section" id="roadmap">
-    <h2 class="section-title">Strategic <span>Roadmap</span></h2>
-    <div class="grid">
-        <div class="card"><h4>Phase 1: 90-Day Sprint</h4><p>Accelerator onboarding (Hub71/DIFC) & Tier-1 VASP identification.</p></div>
-        <div class="card"><h4>Phase 2: Market Entry</h4><p>Brand launch & 14-day "Shadow Pilots" with institutional partners.</p></div>
-        <div class="card"><h4>Phase 3: Scaling</h4><p>Seed round opening and full FATF 2026 Gold Standard automation.</p></div>
-    </div>
-</section>
-
-    <section class="section" id="founder">
-    <div class="founder-box">
-        <h2 style="color:var(--gold)">Message from the Founder</h2>
-        <p style="font-style:italic; margin: 1.5rem 0; font-size: 1.1rem; color: #fff;">
-            "Leveraging my 7-year background as a <b>Senior Criminal Investigator</b> at the <b>Drug Control Department (Ministry of Internal Affairs)</b> and over 12 years in Dubai's business ecosystem, I am building ASII to bridge the gap between field investigative expertise and AI-Native financial intelligence."
-        </p>
-        <p>
-            <strong style="color:var(--gold); font-size: 1.2rem;">Sukhrob Ziyovuddinov</strong><br>
-            Founder & CEO, ASII
-        </p>
-    </div>
-</section>
-
-<section class="section" id="contact" style="text-align: center; padding: 4rem 0;">
-    <h2 style="color:var(--gold); margin-bottom: 2.5rem;">Get in Touch</h2>
-    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+<section class="section" id="founder" style="text-align: center; padding: 4rem 2rem; background: #000;">
+    <div style="background: rgba(212, 175, 55, 0.05); border: 1px solid rgba(212, 175, 55, 0.3); padding: 3.5rem 2rem; border-radius: 25px; max-width: 900px; margin: 0 auto;">
         
-        <a href="https://wa.me/message/XF7UQ67USPUOM1" target="_blank" style="text-decoration: none; background: #25D366; color: white; padding: 12px 25px; border-radius: 50px; font-weight: bold; min-width: 160px; transition: 0.3s;">
-            WhatsApp
-        </a>
+        <h2 style="color:#d4af37; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">Founder & CEO Intelligence</h2>
+        
+        <p style="font-style:italic; margin-bottom: 2.5rem; font-size: 1.2rem; color: #f0f0f0; line-height: 1.9;">
+            "With a 7-year career as a <b>Senior Criminal Investigator</b> at the <b>Ministry of Internal Affairs</b> of the Republic of Tajikistan (Drug Control Department) and over 12 years within the Dubai business ecosystem, I am building ASII to bridge the gap between field-proven investigative intelligence and AI-native automation."
+        </p>
+        
+        <div style="margin-bottom: 3rem; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <span style="border: 1px solid #d4af37; padding: 10px 20px; border-radius: 50px; font-size: 0.85rem; color: #d4af37; font-weight: bold; background: rgba(212, 175, 55, 0.1);">Python / FastAPI</span>
+            <span style="border: 1px solid #d4af37; padding: 10px 20px; border-radius: 50px; font-size: 0.85rem; color: #d4af37; font-weight: bold; background: rgba(212, 175, 55, 0.1);">LLM Multi-Agent Swarm</span>
+            <span style="border: 1px solid #d4af37; padding: 10px 20px; border-radius: 50px; font-size: 0.85rem; color: #d4af37; font-weight: bold; background: rgba(212, 175, 55, 0.1);">Blockchain Forensics</span>
+            <span style="border: 1px solid #d4af37; padding: 10px 20px; border-radius: 50px; font-size: 0.85rem; color: #d4af37; font-weight: bold; background: rgba(212, 175, 55, 0.1);">VARA Compliance</span>
+        </div>
 
-        <a href="https://t.me/asiisz" target="_blank" style="text-decoration: none; background: #0088cc; color: white; padding: 12px 25px; border-radius: 50px; font-weight: bold; min-width: 160px; transition: 0.3s;">
-            Telegram
-        </a>
+        <div style="border-top: 1px solid rgba(212, 175, 55, 0.2); pt-3; padding-top: 2rem;">
+            <strong style="color:#d4af37; font-size: 1.4rem; display: block;">Sukhrob Ziyovuddinov</strong>
+            <span style="color: #aaa; font-size: 1rem;">Expert in Financial Crime Intelligence</span>
+        </div>
+    </div>
+</section>
 
-        <a href="mailto:Sukhrobziyovuddinov@gmail.com" style="text-decoration: none; background: #d44638; color: white; padding: 12px 25px; border-radius: 50px; font-weight: bold; min-width: 160px; transition: 0.3s;">
-            Email
-        </a>
+<section id="contact" style="text-align: center; padding: 5rem 0; background: #000;">
+    <h3 style="color:#fff; margin-bottom: 2.5rem; font-size: 1.5rem;">Direct Communication Channels</h3>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        
+        <a href="https://wa.me/message/XF7UQ67USPUOM1" target="_blank" style="text-decoration: none; background: #25D366; color: white; padding: 15px 35px; border-radius: 12px; font-weight: bold; min-width: 180px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);">WhatsApp</a>
+
+        <a href="https://t.me/asiisz" target="_blank" style="text-decoration: none; background: #0088cc; color: white; padding: 15px 35px; border-radius: 12px; font-weight: bold; min-width: 180px; box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);">Telegram</a>
+
+        <a href="mailto:Sukhrobziyovuddinov@gmail.com" style="text-decoration: none; background: #d44638; color: white; padding: 15px 35px; border-radius: 12px; font-weight: bold; min-width: 180px; box-shadow: 0 4px 15px rgba(212, 70, 56, 0.3);">Email</a>
         
     </div>
 </section>
-    
-
-  <footer>
-    <p>&copy; 2026 ASII. Dubai, United Arab Emirates. Built for Financial Integrity.</p>
-</footer>
-</body>
-</html>
