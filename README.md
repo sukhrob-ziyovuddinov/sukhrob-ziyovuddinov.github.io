@@ -35,6 +35,15 @@ ASII is an AI-Native intelligence infrastructure engineered to redefine financia
     <img src="https://img.shields.io/badge/Email-Executive_Inquiry-D4AF37?style=for-the-badge&logo=gmail&logoColor=black" />
   </a>
 </p>
+---
+---
+### 📬 Let's Connect
+For investment inquiries, partnerships, or technical discussions, feel free to reach out:
+
+* **Telegram:** [@asiisz](https://t.me/asiisz)
+* **WhatsApp:** [Chat with me](https://wa.me/message/XF7UQ67USPUOM1)
+* **LinkedIn:** [Sukhrob Ziyovuddinov](https://www.linkedin.com/in/sukhrob-ziyovuddinov/)
+
 
 ---
 *Based in Dubai, UAE. Automating the future of trust.*
