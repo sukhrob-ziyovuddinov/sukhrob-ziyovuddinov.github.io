@@ -1,761 +1,84 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>ASII | AI-Native Financial Crime Intelligence</title>
-  <meta
-    name="description"
-    content="ASII builds AI-native systems for blockchain forensics, AML intelligence, and regulatory automation in the UAE and MENA region."
-  />
-
-  <meta property="og:title" content="ASII | AI-Native Financial Crime Intelligence" />
-  <meta
-    property="og:description"
-    content="AI-native financial crime intelligence, blockchain forensics, AML workflows, and regulatory automation."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sukhrob-ziyovuddinov.github.io/" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ASII | AI-Native Financial Crime Intelligence" />
-  <meta
-    name="twitter:description"
-    content="AI-native financial crime intelligence, blockchain forensics, AML workflows, and regulatory automation."
-  />
-
-  <style>
-    :root {
-      --bg: #050505;
-      --bg-soft: #0f0f0f;
-      --card: rgba(212, 175, 55, 0.08);
-      --text: #f6f2e8;
-      --muted: #c9bc94;
-      --line: rgba(212, 175, 55, 0.22);
-      --gold: #d4af37;
-      --gold-deep: #b8860b;
-      --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
-      --radius: 22px;
-      --max: 1180px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(212, 175, 55, 0.10), transparent 28%),
-        radial-gradient(circle at top right, rgba(212, 175, 55, 0.08), transparent 26%),
-        linear-gradient(180deg, #030303 0%, #0b0b0b 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(100% - 32px, var(--max));
-      margin: 0 auto;
-    }
-
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(14px);
-      background: rgba(3, 3, 3, 0.82);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .nav-inner {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-    }
-
-    .brand-mark {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: linear-gradient(135deg, var(--gold), var(--gold-deep));
-      color: #070707;
-      font-weight: 900;
-      box-shadow: var(--shadow);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
-
-    .hero {
-      padding: 92px 0 44px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 28px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(212, 175, 55, 0.08);
-      border: 1px solid rgba(212, 175, 55, 0.18);
-      color: #f3dd95;
-      font-size: 0.9rem;
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0 0 18px;
-      font-size: clamp(2.2rem, 5vw, 4.6rem);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-    }
-
-    .hero p {
-      margin: 0 0 26px;
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 760px;
-    }
-
-    .hero-actions,
-    .contact-list,
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .hero-actions {
-      margin-bottom: 26px;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      min-height: 46px;
-      padding: 0 18px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-weight: 700;
-      transition: 0.2s ease;
-      cursor: pointer;
-    }
-
-    .button-primary {
-      background: linear-gradient(135deg, var(--gold), var(--gold-deep));
-      color: #090909;
-      box-shadow: var(--shadow);
-    }
-
-    .button-primary:hover {
-      transform: translateY(-1px);
-      filter: brightness(1.04);
-    }
-
-    .button-secondary {
-      background: rgba(255, 255, 255, 0.03);
-      border-color: var(--line);
-      color: var(--text);
-    }
-
-    .button-secondary:hover {
-      border-color: rgba(212, 175, 55, 0.34);
-      transform: translateY(-1px);
-    }
-
-    .hero-metrics {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .metric,
-    .card,
-    .cta {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .metric {
-      padding: 18px;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 1.45rem;
-      margin-bottom: 4px;
-    }
-
-    .metric span {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .hero-panel {
-      padding: 24px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-panel::before {
-      content: "";
-      position: absolute;
-      inset: auto -60px -60px auto;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(212, 175, 55, 0.22), transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-panel h2 {
-      margin: 0 0 14px;
-      font-size: 1.15rem;
-    }
-
-    .hero-list,
-    .feature-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .hero-list li,
-    .feature-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      color: var(--muted);
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      margin-top: 8px;
-      background: linear-gradient(135deg, var(--gold), var(--gold-deep));
-      flex: 0 0 auto;
-    }
-
-    section {
-      padding: 44px 0;
-    }
-
-    .section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .section-head h2 {
-      margin: 0;
-      font-size: clamp(1.6rem, 2.6vw, 2.3rem);
-      letter-spacing: -0.03em;
-    }
-
-    .section-head p {
-      margin: 0;
-      color: var(--muted);
-      max-width: 680px;
-    }
-
-    .grid-4,
-    .grid-3,
-    .grid-2 {
-      display: grid;
-      gap: 18px;
-    }
-
-    .grid-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .grid-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .card {
-      padding: 22px;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 1.08rem;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .card .small {
-      margin-top: 12px;
-      font-size: 0.92rem;
-      color: #ead8a1;
-    }
-
-    .tag {
-      display: inline-flex;
-      align-items: center;
-      padding: 9px 12px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--line);
-      color: #ead8a1;
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    .accent-badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 7px 12px;
-      border-radius: 999px;
-      background: rgba(212, 175, 55, 0.12);
-      border: 1px solid rgba(212, 175, 55, 0.2);
-      font-size: 0.84rem;
-      font-weight: 700;
-      color: #f1dc99;
-      margin-bottom: 14px;
-    }
-
-    .feature-list {
-      margin-top: 14px;
-    }
-
-    .founder {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 18px;
-    }
-
-    .timeline {
-      display: grid;
-      gap: 14px;
-      margin-top: 16px;
-    }
-
-    .timeline-item {
-      padding: 16px 18px;
-      border-radius: 18px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    .timeline-item strong {
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    .cases-grid .card {
-      min-height: 220px;
-    }
-
-    .cta {
-      padding: 24px;
-      background:
-        linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 11, 0.10)),
-        var(--card);
-    }
-
-    .cta h2 {
-      margin: 0 0 10px;
-    }
-
-    .cta p {
-      margin: 0 0 18px;
-      color: var(--muted);
-      max-width: 760px;
-    }
-
-    .footer {
-      padding: 24px 0 44px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-      border-top: 1px solid var(--line);
-      padding-top: 20px;
-    }
-
-    @media (max-width: 1080px) {
-      .hero-grid,
-      .founder,
-      .grid-4,
-      .grid-3,
-      .grid-2 {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-metrics {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .nav-inner {
-        flex-direction: column;
-        justify-content: center;
-        padding: 14px 0;
-      }
-
-      .nav-links {
-        justify-content: center;
-      }
-
-      .hero {
-        padding-top: 56px;
-      }
-
-      .section-head {
-        align-items: start;
-        flex-direction: column;
-      }
-    }
-  </style>
+  <meta name="description" content="ASII is an AI-native financial crime intelligence platform for the UAE and MENA." />
+  <title>ASII | Financial Crime Intelligence</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="ASII home">
-        <span class="brand-mark">A</span>
-        <span>ASII</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#cases">Cases</a>
-        <a href="#founder">Founder</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="index.html">ASII</a>
+      <button class="menu-toggle" type="button">Menu</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Solutions</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">AI-Native Financial Crime Intelligence</div>
-          <h1>Investigative logic, rebuilt as scalable compliance systems.</h1>
-          <p>
-            ASII builds practical intelligence layers for blockchain forensics,
-            AML operations, crypto risk analysis, and regulatory automation
-            across the UAE and wider MENA region.
+          <div class="badge">UAE-first | AI-native | Regulator-ready</div>
+          <h1>Financial crime intelligence infrastructure for the UAE and MENA.</h1>
+          <p class="lead">
+            ASII helps regulated institutions strengthen AML/CFT, crypto risk, sanctions,
+            Travel Rule intelligence, investigations, and regulator-ready reporting.
           </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Start a Conversation</a>
-            <a class="button button-secondary" href="#services">Explore Services</a>
-          </div>
-
-          <div class="hero-metrics">
-            <div class="metric">
-              <strong>12+ Years</strong>
-              <span>Dubai business landscape familiarity</span>
-            </div>
-            <div class="metric">
-              <strong>7 Years</strong>
-              <span>Criminal investigation leadership background</span>
-            </div>
-            <div class="metric">
-              <strong>AI-Native</strong>
-              <span>Operational systems for modern financial intelligence</span>
-            </div>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="services.html">Explore Solutions</a>
+            <a class="btn btn-secondary" href="contact.html">Contact ASII</a>
           </div>
         </div>
-
-        <aside class="card hero-panel" aria-label="Core focus">
-          <h2>Core Focus</h2>
-          <ul class="hero-list">
-            <li><span class="dot"></span><span>Blockchain forensics and wallet intelligence workflows</span></li>
-            <li><span class="dot"></span><span>AML risk detection and suspicious activity analysis</span></li>
-            <li><span class="dot"></span><span>AI agent systems for compliance operations</span></li>
-            <li><span class="dot"></span><span>UAE-ready regulatory workflow design</span></li>
+        <aside class="panel">
+          <h3>Core Areas</h3>
+          <ul class="clean">
+            <li>AML/CFT intelligence workflows</li>
+            <li>Crypto risk and Travel Rule support</li>
+            <li>Sanctions and adverse media intelligence</li>
+            <li>Cross-border case intelligence</li>
+            <li>Regulator-ready reporting</li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <section id="about">
+    <section>
       <div class="container">
-        <div class="section-head">
-          <h2>About ASII</h2>
-          <p>
-            ASII is positioned at the intersection of financial crime intelligence,
-            AI orchestration, and crypto-native investigative workflows.
-          </p>
-        </div>
-
-        <div class="grid-3">
+        <h2>Why ASII</h2>
+        <div class="card-grid">
           <article class="card">
-            <h3>Intelligence Architecture</h3>
-            <p>
-              Convert investigative reasoning into structured and repeatable decision flows
-              for analysts, compliance teams, and digital asset businesses.
-            </p>
+            <h3>AI-native operations</h3>
+            <p>Operational workflows designed for speed, defensibility, and intelligence depth.</p>
           </article>
-
           <article class="card">
-            <h3>RegTech Execution</h3>
-            <p>
-              Build lean systems that support monitoring, escalation, documentation,
-              and policy-aligned evidence handling.
-            </p>
+            <h3>Regional relevance</h3>
+            <p>Built with UAE-first market logic and MENA execution in mind.</p>
           </article>
-
           <article class="card">
-            <h3>MENA Readiness</h3>
-            <p>
-              Focus on regional context, operational clarity, and regulation-aware
-              implementation for UAE-led transformation.
-            </p>
+            <h3>Institutional trust</h3>
+            <p>Designed for regulated institutions that need auditable, decision-ready outputs.</p>
           </article>
-        </div>
-
-        <div class="tag-list" aria-label="Technology tags">
-          <span class="tag">AML / CFT</span>
-          <span class="tag">Blockchain Forensics</span>
-          <span class="tag">Crypto Risk</span>
-          <span class="tag">RegTech</span>
-          <span class="tag">Workflow Automation</span>
-          <span class="tag">AI Agents</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="section-head">
-          <h2>Services</h2>
-          <p>
-            A focused service layer for compliance intelligence, blockchain investigations,
-            and AI-assisted operational workflows.
-          </p>
-        </div>
-
-        <div class="grid-4">
-          <article class="card">
-            <div class="accent-badge">01</div>
-            <h3>Blockchain Forensics</h3>
-            <p>
-              Wallet tracing, transaction flow review, typology mapping, and crypto risk pattern analysis.
-            </p>
-            <ul class="feature-list">
-              <li><span class="dot"></span><span>Wallet clustering support</span></li>
-              <li><span class="dot"></span><span>Transaction behavior review</span></li>
-              <li><span class="dot"></span><span>Case-oriented evidence logic</span></li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="accent-badge">02</div>
-            <h3>AML Intelligence Workflows</h3>
-            <p>
-              Structuring alert review, case enrichment, escalation flows, and analyst decision support.
-            </p>
-            <ul class="feature-list">
-              <li><span class="dot"></span><span>Alert triage design</span></li>
-              <li><span class="dot"></span><span>EDD workflow support</span></li>
-              <li><span class="dot"></span><span>Suspicious activity logic</span></li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="accent-badge">03</div>
-            <h3>Regulatory Automation</h3>
-            <p>
-              Translating policy obligations into clear digital workflows, controls, and documentation systems.
-            </p>
-            <ul class="feature-list">
-              <li><span class="dot"></span><span>Procedure mapping</span></li>
-              <li><span class="dot"></span><span>Evidence-ready documentation</span></li>
-              <li><span class="dot"></span><span>Operational consistency layers</span></li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="accent-badge">04</div>
-            <h3>AI Agent Systems</h3>
-            <p>
-              Internal assistants for summarization, monitoring support, research routing, and structured case preparation.
-            </p>
-            <ul class="feature-list">
-              <li><span class="dot"></span><span>Internal research agents</span></li>
-              <li><span class="dot"></span><span>Case summary generation</span></li>
-              <li><span class="dot"></span><span>Workflow orchestration support</span></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="cases">
-      <div class="container">
-        <div class="section-head">
-          <h2>Cases & Use Scenarios</h2>
-          <p>
-            Representative examples of where ASII-style systems create value.
-          </p>
-        </div>
-
-        <div class="grid-3 cases-grid">
-          <article class="card">
-            <h3>Crypto Exchange Review Flow</h3>
-            <p>
-              Build an internal workflow that enriches alerts, structures analyst notes,
-              and standardizes escalation logic for digital asset transactions.
-            </p>
-            <p class="small">Focus: AML operations, alert review, internal controls.</p>
-          </article>
-
-          <article class="card">
-            <h3>Wallet Investigation Workspace</h3>
-            <p>
-              Organize wallet links, transaction observations, and typology findings
-              into a single investigation-ready workflow for researchers or analysts.
-            </p>
-            <p class="small">Focus: blockchain forensics, trace analysis, case management.</p>
-          </article>
-
-          <article class="card">
-            <h3>RegTech Prototype for UAE Market</h3>
-            <p>
-              Translate policy requirements into a clear workflow model for onboarding,
-              review, evidence handling, and compliance reporting.
-            </p>
-            <p class="small">Focus: policy mapping, documentation, process automation.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="founder">
-      <div class="container founder">
-        <article class="card">
-          <div class="accent-badge">Founder & CEO</div>
-          <h2 style="margin-top: 0;">Sukhrob Ziyovuddinov</h2>
-          <p style="color: var(--muted); margin-bottom: 0;">
-            Senior investigator turned AI-native compliance builder,
-            translating field intelligence into scalable operational systems.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3 style="margin-top: 0;">About Founder</h3>
-          <p>
-            A founder profile grounded in criminal investigations, financial crime intelligence,
-            blockchain risk awareness, and practical workflow design for regulated environments.
-          </p>
-
-          <div class="timeline">
-            <div class="timeline-item">
-              <strong>Investigative Foundation</strong>
-              Built on real-world investigative logic, evidence development, and case-oriented analytical work.
-            </div>
-            <div class="timeline-item">
-              <strong>Regional Business Context</strong>
-              Long-term familiarity with Dubai’s business environment, operational expectations, and market positioning.
-            </div>
-            <div class="timeline-item">
-              <strong>AI-Native Direction</strong>
-              Focused on reducing manual friction by turning intelligence work into repeatable digital systems.
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="cta">
-          <h2>Direct Communication</h2>
-          <p>
-            Use the channels below for direct contact.
-          </p>
-
-          <div class="contact-list">
-            <a class="button button-primary" href="https://wa.me/message/XF7UQ67USPUOM1" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="button button-secondary" href="https://t.me/asiisz" target="_blank" rel="noreferrer">Telegram</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/szdxb" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="button button-secondary" href="mailto:sukhrobziyovuddinov@gmail.com">Email</a>
-          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> ASII. All rights reserved.</span>
-      <span>Dubai, UAE</span>
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> ASII. All rights reserved.</div>
+      <div>Dubai, UAE</div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <button class="back-to-top" type="button">Top</button>
+  <script src="script.js"></script>
 </body>
-    </html>
+</html>
