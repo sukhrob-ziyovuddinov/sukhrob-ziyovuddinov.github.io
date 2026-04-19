@@ -1,47 +1,113 @@
-# 🛡️ ASII | AI-Native Financial Crime Intelligence
+# ASII
+## AI-Native Financial Crime Intelligence for UAE-Regulated Digital Asset Workflows
 
-> **Infrastructure for the 2026-2027 UAE Digital Mandate.** > Bridging the gap between Fiat banking and Blockchain/VARA forensics.
+ASII is a UAE-first, AI-native financial crime intelligence platform built for regulated digital-asset and cross-border compliance workflows.
 
----
-
-### 🚀 Vision
-**ASII** is an AI-native intelligence infrastructure designed to redefine financial compliance in the MENA region. We specialize in reducing "noise" in compliance by **95%** and eliminating the friction between traditional banking and digital assets.
+It helps compliance and investigations teams handle Travel Rule obligations, crypto risk exposure, cross-border intelligence, and regulator-ready reporting through a single operating layer.
 
 ---
 
-### 👮 Professional Profile (Founder)
-With a 7-year career as a **Senior Criminal Investigator** at the **Drug Control Agency of the Ministry of Internal Affairs (Republic of Tajikistan)**, I bring field-proven investigative intuition to AI automation. My background in law enforcement provides the "criminal logic" that drives the ASII architecture.
+## Why ASII exists
+
+Financial crime risk workflows across digital assets are still fragmented.
+
+Compliance teams often work across disconnected tools for wallet screening, adverse media, sanctions checks, case assembly, and reporting. This creates slow investigations, weak evidence trails, and poor operational visibility.
+
+ASII is being built to close that gap.
 
 ---
 
-### 🗺️ Strategic Roadmap (2026-2027)
+## What ASII solves first
 
-#### **Phase 1: Market Penetration (90-Day Sprint)**
-* **Days 1-30:** Onboarding via Hub71/DIFC Innovation Hub. Identifying top 20 VASP targets.
-* **Days 31-60:** Launching 14-day "Shadow Pilots" alongside legacy systems.
-* **Days 61-90:** Converting pilots into corporate contracts & opening Seed Round (Shorooq, Ghaf Capital).
+ASII is focused first on a narrow, high-value workflow:
 
-#### **Phase 2: National Scale & Regulation**
-* **Q4 2026:** Achieving automated compliance with the FATF "Gold Standard".
-* **2027:** Full integration with the UAE Prime Minister’s Digital Mandate.
+- Travel Rule workflow support
+- Crypto risk intelligence
+- Investigator case assembly
+- Regulator-ready reporting
 
----
-
-### 🧠 AI-Agent Swarm Architecture
-1. **Reg-Oracle:** Real-time tracking of UAE & VARA legislative updates.
-2. **Integrity Controller:** Cross-border flow analysis (Fiat & Crypto).
-3. **Behavioral Profiling Agent:** Autonomous entity determination & criminalistics.
-4. **Strategic Intel Agent:** Automated SAR (Suspicious Activity Report) generation.
+Rather than adding another dashboard, ASII is designed to help teams move from signals to evidence-backed decisions.
 
 ---
 
-### 📬 Let's Connect
-For investment inquiries, regulatory partnerships, or technical discussions:
+## Who ASII is built for
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sukhrob-ziyovuddinov/)
-[![Telegram](https://img.shields.io/badge/Telegram-Contact-0088cc?style=for-the-badge&logo=telegram)](https://t.me/asiisz)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/message/XF7UQ67USPUOM1)
-[![Email](https://img.shields.io/badge/Email-Inquiry-d44638?style=for-the-badge&logo=gmail)](mailto:Sukhrobziyovuddinov@gmail.com)
+ASII is designed first for:
+
+- Licensed VASPs
+- Institutional digital-asset operators
+- Compliance and investigations teams working across crypto and cross-border risk
 
 ---
-*Based in Dubai, UAE. Automating the future of trust.*
+
+## Core workflow
+
+ASII connects five layers of work:
+
+### Signals
+Wallet activity, customer data, sanctions, adverse media, and case inputs.
+
+### Intelligence
+Entity and wallet context, typology logic, cross-border patterns, and investigative signals.
+
+### Investigation
+Structured case handling, analyst review, escalation support, and workflow traceability.
+
+### Evidence
+Artifacts, linked records, supporting context, and clear audit trails.
+
+### Reporting
+Management-ready and regulator-ready outputs for internal decision-making and external review.
+
+---
+
+## Why UAE first
+
+The UAE is one of the most important markets for regulated digital-asset infrastructure.
+
+As Travel Rule implementation, AML/CFT expectations, and institutional digital-asset activity become more operationally demanding, regulated firms need stronger intelligence workflows, not just more alerts.
+
+ASII is being built with that regional reality in mind.
+
+---
+
+## Product principles
+
+ASII is being designed around a few core principles:
+
+- AI-native, but investigation-led
+- Built for regulated workflows
+- Explainable and auditable
+- Human review built in
+- Flexible deployment posture
+- Focused on evidence quality, not just alert generation
+
+---
+
+## Current focus
+
+The current focus is on:
+
+- Defining the first production-grade workflow
+- Engaging design partners in the UAE
+- Refining the platform around Travel Rule, crypto AML, and investigations use cases
+- Building commercial and institutional readiness
+
+---
+
+## Partnership and pilot discussions
+
+ASII is open to:
+
+- Design-partner discussions
+- UAE pilot conversations
+- Strategic partnerships
+- Investor dialogue aligned with the UAE-first roadmap
+
+---
+
+## Contact
+
+**ASII**  
+Dubai, UAE  
+For pilot, partnership, or investor conversations: **info@asii.ai**
