@@ -1,92 +1,215 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ASII | Financial Crime Intelligence</title>
-  <meta name="description" content="AI-native financial crime intelligence platform for the UAE and MENA.">
-  <link rel="manifest" href="/manifest.webmanifest">
-</head>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ASII is an AI-native financial crime intelligence platform for the UAE and MENA." />
-  <title>ASII | Financial Crime Intelligence</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>ASII | AI-Native Financial Crime Intelligence</title>
+  <meta name="description" content="ASII is a UAE-first, AI-native financial crime intelligence platform for Travel Rule, crypto risk, cross-border intelligence, and regulator-ready reporting." />
+  <link rel="manifest" href="/manifest.webmanifest">
+  <style>
+    :root{
+      --bg:#07111f;
+      --bg2:#0d1b2f;
+      --card:#10233d;
+      --line:rgba(255,255,255,0.08);
+      --text:#eef4ff;
+      --muted:#a8b7d1;
+      --accent:#7db8ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,var(--bg),#081423 50%, var(--bg2));
+      color:var(--text);
+      line-height:1.6;
+    }
+    .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+    .hero{padding:88px 0 72px;border-bottom:1px solid var(--line)}
+    .eyebrow{color:var(--accent);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+    h1{font-size:54px;line-height:1.05;margin:0 0 20px;max-width:900px}
+    .sub{color:var(--muted);font-size:20px;max-width:760px;margin-bottom:30px}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:700;border:1px solid var(--line)}
+    .btn.primary{background:var(--accent);color:#04111f}
+    .btn.secondary{color:var(--text);background:transparent}
+    section{padding:68px 0;border-bottom:1px solid var(--line)}
+    h2{font-size:34px;line-height:1.15;margin:0 0 14px}
+    .lead{color:var(--muted);max-width:780px;margin:0 0 28px}
+    .grid-3,.grid-4{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-4{grid-template-columns:repeat(4,1fr)}
+    .card{background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .card h3{margin:0 0 10px;font-size:20px}
+    .card p{margin:0;color:var(--muted)}
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .flow .step{background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .step .num{color:var(--accent);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+    ul.clean{list-style:none;padding:0;margin:0}
+    ul.clean li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+    ul.clean li:last-child{border-bottom:none}
+    .cta-box{background:linear-gradient(135deg,rgba(125,184,255,.12),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:22px;padding:28px}
+    footer{padding:28px 0 44px;color:var(--muted);font-size:14px}
+    @media (max-width: 980px){
+      h1{font-size:42px}
+      .grid-3,.grid-4,.flow{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 680px){
+      h1{font-size:34px}
+      .sub{font-size:18px}
+      .grid-3,.grid-4,.flow{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container navbar">
-      <a class="logo" href="index.html">ASII</a>
-      <button class="menu-toggle" type="button">Menu</button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Solutions</a></li>
-        <li><a href="insights.html">Insights</a></li>
-        <li><a href="contact.html">Contact</a></li>
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">ASII · UAE-first financial crime intelligence</div>
+      <h1>AI-native financial crime intelligence for UAE-regulated digital asset workflows</h1>
+      <div class="sub">
+        Travel Rule, crypto risk, cross-border intelligence, and investigator-grade reporting in one operating layer.
+      </div>
+      <div class="cta-row">
+        <a href="mailto:info@asii.ai" class="btn primary">Request a pilot conversation</a>
+        <a href="#platform" class="btn secondary">Explore the platform</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Why this matters now</h2>
+      <p class="lead">
+        Regulated digital-asset businesses in the UAE are operating in a more precise compliance environment. The challenge is no longer access to tools. The challenge is turning fragmented signals into defensible investigative outcomes.
+      </p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Travel Rule execution</h3>
+          <p>Compliance teams need stronger operational workflows for handling data, counterparties, exceptions, and evidence.</p>
+        </div>
+        <div class="card">
+          <h3>Crypto and cross-border complexity</h3>
+          <p>Risk does not sit in one system. Wallet activity, entity context, sanctions exposure, and off-chain intelligence must be connected.</p>
+        </div>
+        <div class="card">
+          <h3>Regulator-ready reporting</h3>
+          <p>Institutions need reporting and evidence that can support escalation, audit, and external review with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="platform">
+    <div class="wrap">
+      <h2>What ASII solves first</h2>
+      <p class="lead">
+        ASII is built around a narrow, high-value starting point rather than a broad compliance wishlist.
+      </p>
+      <div class="grid-4">
+        <div class="card">
+          <h3>Travel Rule workflow intelligence</h3>
+          <p>Support for operational handling, review, and escalation across regulated digital-asset flows.</p>
+        </div>
+        <div class="card">
+          <h3>Wallet and entity risk context</h3>
+          <p>A clearer view of counterparties, exposure, and linked intelligence signals.</p>
+        </div>
+        <div class="card">
+          <h3>Case intelligence for investigators</h3>
+          <p>Structured workflows for review, prioritisation, and evidence assembly.</p>
+        </div>
+        <div class="card">
+          <h3>Reporting and evidence packs</h3>
+          <p>Outputs designed for internal governance and regulator-facing readiness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>From signals to reporting</h2>
+      <p class="lead">ASII is designed to help teams move from fragmented inputs to evidence-backed outputs.</p>
+      <div class="flow">
+        <div class="step">
+          <div class="num">Step 1</div>
+          <h3>Ingest</h3>
+          <p>Bring together wallet activity, sanctions data, adverse media, case inputs, and relevant customer context.</p>
+        </div>
+        <div class="step">
+          <div class="num">Step 2</div>
+          <h3>Link</h3>
+          <p>Connect entities, wallets, counterparties, and investigative signals into a usable intelligence layer.</p>
+        </div>
+        <div class="step">
+          <div class="num">Step 3</div>
+          <h3>Investigate</h3>
+          <p>Support analyst review, prioritisation, escalation, and case development with clearer context.</p>
+        </div>
+        <div class="step">
+          <div class="num">Step 4</div>
+          <h3>Report</h3>
+          <p>Produce evidence-backed outputs for internal stakeholders, audit functions, and regulatory review.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Built for regulated teams operating in digital asset risk</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Licensed VASPs</h3><p>Operators managing regulated digital-asset flows in the UAE.</p></div>
+        <div class="card"><h3>Institutional digital-asset operators</h3><p>Businesses requiring stronger oversight, control, and reporting workflows.</p></div>
+        <div class="card"><h3>Compliance and investigations teams</h3><p>Teams working across crypto exposure, cross-border activity, and internal escalation.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Why ASII is different</h2>
+      <div class="grid-4">
+        <div class="card"><h3>UAE-first context</h3><p>Built with the realities of regulated digital-asset operations in the UAE in mind.</p></div>
+        <div class="card"><h3>Not just screening</h3><p>Focused on intelligence workflows, not isolated point checks.</p></div>
+        <div class="card"><h3>Investigator-grade outputs</h3><p>Built around case quality, escalation clarity, and evidence readiness.</p></div>
+        <div class="card"><h3>Operational trust layer</h3><p>Designed to support explainability, auditability, and human decision-making.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Designed for trust-sensitive workflows</h2>
+      <p class="lead">
+        ASII is being built for environments where workflow quality matters as much as detection logic.
+      </p>
+      <ul class="clean">
+        <li>Explainable intelligence</li>
+        <li>Auditable case handling</li>
+        <li>Human review built in</li>
+        <li>Regulator-aware reporting posture</li>
+        <li>Flexible deployment considerations</li>
       </ul>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="badge">UAE-first | AI-native | Regulator-ready</div>
-          <h1>Financial crime intelligence infrastructure for the UAE and MENA.</h1>
-          <p class="lead">
-            ASII helps regulated institutions strengthen AML/CFT, crypto risk, sanctions,
-            Travel Rule intelligence, investigations, and regulator-ready reporting.
-          </p>
-          <div class="cta-group">
-            <a class="btn btn-primary" href="services.html">Explore Solutions</a>
-            <a class="btn btn-secondary" href="contact.html">Contact ASII</a>
-          </div>
-        </div>
-        <aside class="panel">
-          <h3>Core Areas</h3>
-          <ul class="clean">
-            <li>AML/CFT intelligence workflows</li>
-            <li>Crypto risk and Travel Rule support</li>
-            <li>Sanctions and adverse media intelligence</li>
-            <li>Cross-border case intelligence</li>
-            <li>Regulator-ready reporting</li>
-          </ul>
-        </aside>
+  <section>
+    <div class="wrap">
+      <div class="cta-box">
+        <h2>Looking for a UAE design partner, pilot discussion, or strategic conversation?</h2>
+        <p class="lead">
+          ASII is currently engaging with regulated operators, strategic partners, and early institutional stakeholders shaping the next generation of financial crime intelligence in the region.
+        </p>
+        <a href="mailto:info@asii.ai" class="btn primary">Book a conversation</a>
       </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>Why ASII</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>AI-native operations</h3>
-            <p>Operational workflows designed for speed, defensibility, and intelligence depth.</p>
-          </article>
-          <article class="card">
-            <h3>Regional relevance</h3>
-            <p>Built with UAE-first market logic and MENA execution in mind.</p>
-          </article>
-          <article class="card">
-            <h3>Institutional trust</h3>
-            <p>Designed for regulated institutions that need auditable, decision-ready outputs.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <div class="container footer-row">
-      <div>© <span id="year"></span> ASII. All rights reserved.</div>
-      <div>Dubai, UAE</div>
+    <div class="wrap">
+      ASII · Dubai, UAE · info@asii.ai
     </div>
   </footer>
-
-  <button class="back-to-top" type="button">Top</button>
-  <script src="script.js"></script>
 </body>
 </html>
