@@ -1,0 +1,9 @@
+{
+  "name": "ASII",
+  "short_name": "ASII",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "description": "AI-native financial crime intelligence infrastructure for regulated institutions in the UAE and MENA."
+}
