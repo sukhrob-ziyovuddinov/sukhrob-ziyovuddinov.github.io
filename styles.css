@@ -82,6 +82,20 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.hero-panel {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+}
+
 .page-hero {
   padding: 72px 0 48px;
   border-bottom: 1px solid var(--line);
@@ -124,6 +138,30 @@ h3 {
 
 .intro {
   font-size: 18px;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.highlight {
+  background: var(--accent-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  color: var(--text);
+}
+
+.inline-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.inline-links a {
+  text-decoration: none;
 }
 
 section {
@@ -263,6 +301,7 @@ footer {
     font-size: 42px;
   }
 
+  .hero-grid,
   .grid-2,
   .grid-3,
   .grid-4,
@@ -282,6 +321,7 @@ footer {
     font-size: 18px;
   }
 
+  .hero-grid,
   .grid-2,
   .grid-3,
   .grid-4,
